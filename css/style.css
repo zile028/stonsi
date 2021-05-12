@@ -23,7 +23,7 @@ body {
   padding: 70px 0;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 767px) {
   .py {
     padding: 40px 0;
   }
@@ -34,7 +34,7 @@ body {
   margin: 0 auto;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 767px) {
   .container {
     width: 90%;
   }
@@ -72,6 +72,12 @@ body {
   color: #fff;
 }
 
+@media (max-width: 767px) {
+  body {
+    padding-top: 20px;
+  }
+}
+
 /*---- header ----*/
 header {
   display: -webkit-box;
@@ -93,10 +99,22 @@ header {
   position: relative;
 }
 
+@media (max-width: 767px) {
+  header {
+    height: auto;
+  }
+}
+
 header img {
   margin: 0 auto;
   height: 250px;
   border-radius: 50%;
+}
+
+@media (max-width: 767px) {
+  header img {
+    height: 100px;
+  }
 }
 
 header nav {
@@ -136,10 +154,25 @@ header nav div {
           flex-direction: row;
 }
 
+@media (max-width: 767px) {
+  header nav div {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 90%;
+  }
+}
+
 header nav div ul li {
   font-size: 1.2rem;
   padding: 1em 0;
   display: inline-block;
+}
+
+@media (max-width: 767px) {
+  header nav div ul li {
+    font-size: 1rem;
+  }
 }
 
 header nav div ul li a {
@@ -149,9 +182,24 @@ header nav div ul li a {
   text-transform: uppercase;
 }
 
+@media (max-width: 767px) {
+  header nav div ul li a {
+    padding: 0.5em 0.5em;
+  }
+}
+
 header nav div ul li a:hover {
   background-color: rgba(255, 255, 255, 0.8);
   color: #3c151a;
+}
+
+@media (max-width: 767px) {
+  header nav a {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-right: 10px;
+  }
 }
 
 /*---- intro  ----*/
@@ -159,6 +207,13 @@ header nav div ul li a:hover {
   padding: 50px 0 20px;
   text-align: center;
   font-size: 1.2rem;
+}
+
+@media (max-width: 767px) {
+  .intro {
+    font-size: 1rem;
+    padding: 20px 0;
+  }
 }
 
 .intro span {
@@ -186,16 +241,39 @@ header nav div ul li a:hover {
           flex-direction: row;
 }
 
+@media (max-width: 767px) {
+  .album {
+    padding: 30px;
+  }
+}
+
 .album article:first-child {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 40%;
           flex: 0 0 40%;
 }
 
+@media (max-width: 767px) {
+  .album article:first-child {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    margin-bottom: 20px;
+  }
+}
+
 .album article:last-child {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 55%;
           flex: 0 0 55%;
+}
+
+@media (max-width: 767px) {
+  .album article:last-child {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
 }
 
 .album h2 {
@@ -242,6 +320,15 @@ header nav div ul li a:hover {
           flex: 0 0 22%;
 }
 
+@media (max-width: 767px) {
+  .bends article {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 49%;
+            flex: 0 0 49%;
+    margin-bottom: 10px;
+  }
+}
+
 .bends img {
   width: 100%;
 }
@@ -286,6 +373,15 @@ header nav div ul li a:hover {
           flex: 0 0 31%;
 }
 
+@media (max-width: 767px) {
+  .news article div {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    margin-bottom: 10px;
+  }
+}
+
 .news article h3 {
   font-size: 1.8rem;
   margin-bottom: 10px;
@@ -307,7 +403,7 @@ header nav div ul li a:hover {
 
 @media (max-width: 767px) {
   .news article button {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 }
 
@@ -325,5 +421,12 @@ footer {
   text-align: center;
   font-weight: 600;
   font-size: 0.9rem;
+}
+
+@media (max-width: 767px) {
+  footer {
+    padding: 30px;
+    margin-top: 40px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

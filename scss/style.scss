@@ -11,6 +11,9 @@ body {
     url(../img/bg.jpg);
   padding-top: 40px;
   color: $white;
+  @media (max-width: 767px) {
+    padding-top: 20px;
+  }
 }
 
 /*---- header ----*/
@@ -18,10 +21,16 @@ header {
   @include flex(center, center, column);
   height: 250px;
   position: relative;
+  @media (max-width: 767px) {
+    height: auto;
+  }
   img {
     margin: 0 auto;
     height: 250px;
     border-radius: 50%;
+    @media (max-width: 767px) {
+      height: 100px;
+    }
   }
   nav {
     width: 100%;
@@ -40,22 +49,38 @@ header {
       width: 65%;
       margin: 0 auto;
       @include flex(space-between, center);
+      @media (max-width: 767px) {
+        justify-content: center;
+        width: 90%;
+      }
       ul {
         li {
           font-size: 1.2rem;
           padding: 1em 0;
           display: inline-block;
+          @media (max-width: 767px) {
+            font-size: 1rem;
+          }
           a {
             padding: 0.5em 1.1em;
             border-radius: 5px;
             color: $white;
             text-transform: uppercase;
+            @media (max-width: 767px) {
+              padding: 0.5em 0.5em;
+            }
             &:hover {
               background-color: rgba($white, 0.8);
               color: rgba($brown, 1);
             }
           }
         }
+      }
+    }
+    a {
+      @media (max-width: 767px) {
+        order: -1;
+        margin-right: 10px;
       }
     }
   }
@@ -66,6 +91,10 @@ header {
   padding: 50px 0 20px;
   text-align: center;
   font-size: 1.2rem;
+  @media (max-width: 767px) {
+    font-size: 1rem;
+    padding: 20px 0;
+  }
   span {
     font-size: 0.8em;
   }
@@ -76,12 +105,22 @@ header {
   background-color: rgba($brown, 0.5);
   padding: 50px;
   @include flex(space-between, center);
+  @media (max-width: 767px) {
+    padding: 30px;
+  }
   article {
     &:first-child {
       flex: 0 0 40%;
+      @media (max-width: 767px) {
+        flex: 0 0 100%;
+        margin-bottom: 20px;
+      }
     }
     &:last-child {
       flex: 0 0 55%;
+      @media (max-width: 767px) {
+        flex: 0 0 100%;
+      }
     }
   }
   h2 {
@@ -107,6 +146,10 @@ header {
   text-align: center;
   article {
     flex: 0 0 22%;
+    @media (max-width: 767px) {
+      flex: 0 0 49%;
+      margin-bottom: 10px;
+    }
   }
   img {
     width: 100%;
@@ -129,6 +172,10 @@ header {
     @include flex(space-between, center);
     div {
       flex: 0 0 31%;
+      @media (max-width: 767px) {
+        flex: 0 0 100%;
+        margin-bottom: 10px;
+      }
     }
     h3 {
       font-size: 1.8rem;
@@ -148,4 +195,8 @@ footer {
   text-align: center;
   font-weight: 600;
   font-size: 0.9rem;
+  @media (max-width: 767px) {
+    padding: 30px;
+    margin-top: 40px;
+  }
 }

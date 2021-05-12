@@ -33,14 +33,14 @@ body {
 
 .py {
   padding: 70px 0;
-  @media (max-width: 769px) {
+  @media (max-width: 767px) {
     padding: 40px 0;
   }
 }
 .container {
   width: 80%;
   margin: 0 auto;
-  @media (max-width: 769px) {
+  @media (max-width: 767px) {
     width: 90%;
   }
 }
